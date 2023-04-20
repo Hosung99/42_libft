@@ -6,7 +6,7 @@
 /*   By: seoson <seoson@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 15:14:23 by seoson            #+#    #+#             */
-/*   Updated: 2023/04/10 20:38:43 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/13 14:39:16 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,14 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
 int				ft_isalpha(int c);
 int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
 int				ft_isalnum(int c);
-unsigned int	ft_strlen(const char *s);
-void			*ft_memset(void *b, int c, unsigned int len);
+size_t			ft_strlen(const char *s);
+void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
 void			*ft_memcpy(void *dst, const void *src, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t len);

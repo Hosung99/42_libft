@@ -6,7 +6,7 @@
 /*   By: seoson <seoson@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 17:58:16 by seoson            #+#    #+#             */
-/*   Updated: 2023/04/08 17:39:32 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/19 14:13:14 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,10 +84,7 @@ char	**ft_split(char const *s, char c)
 	word_cnt = count_word(s, c);
 	str = (char **)malloc(sizeof(char *) * (word_cnt + 1));
 	if (!str)
-	{
-		free(str);
 		return (0);
-	}
 	str[word_cnt] = 0;
 	while (word_cnt--)
 	{

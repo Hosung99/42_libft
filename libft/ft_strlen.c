@@ -6,13 +6,15 @@
 /*   By: seoson <seoson@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 13:44:28 by seoson            #+#    #+#             */
-/*   Updated: 2023/03/28 13:10:35 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/13 14:23:48 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	unsigned int	cnt;
+	size_t	cnt;
 
 	cnt = 0;
 	while (*s)

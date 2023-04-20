@@ -6,7 +6,7 @@
 /*   By: seoson <seoson@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 14:36:51 by seoson            #+#    #+#             */
-/*   Updated: 2023/04/07 17:11:24 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/13 14:21:35 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 	unsigned char	*save;
 
 	i = 0;

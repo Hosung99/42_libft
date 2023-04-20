@@ -6,13 +6,13 @@
 /*   By: seoson <seoson@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 14:49:50 by seoson            #+#    #+#             */
-/*   Updated: 2023/03/28 19:43:51 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/19 14:05:48 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	word_correct(unsigned char *haystack, unsigned char *needle, \
+static int	word_correct(unsigned char *haystack, unsigned char *needle, \
 		size_t len, size_t index)
 {
 	size_t		i;

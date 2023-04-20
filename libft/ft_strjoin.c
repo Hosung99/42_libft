@@ -6,7 +6,7 @@
 /*   By: seoson <seoson@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 15:59:33 by seoson            #+#    #+#             */
-/*   Updated: 2023/03/28 19:41:52 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/13 15:48:18 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	str = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
-	if (!str)
-		return (0);
 	i = 0;
 	save = 0;
+	if (!str)
+		return (0);
 	while (s1[i])
 		str[save++] = s1[i++];
 	i = 0;

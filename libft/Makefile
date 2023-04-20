@@ -6,7 +6,7 @@ SRCS_B = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast
 OBJS = $(SRCS:.c=.o)
 OBJS_B = $(SRCS_B:.c=.o)
 
-ifndef BONUS
+ifdef BONUS
 	OBJECT_FILES = $(OBJS) $(OBJS_B)
 else
 	OBJECT_FILES = $(OBJS)
@@ -15,12 +15,12 @@ endif
 all: $(NAME)
 
 $(NAME): $(OBJECT_FILES)
-	ar rcs $@ $^
+	ar rc $@ $^
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
-bonus: 
+bonus:
 	 make BONUS=1 all
 
 clean:
@@ -31,4 +31,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re

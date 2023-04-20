@@ -6,7 +6,7 @@
 /*   By: seoson <seoson@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 14:33:08 by seoson            #+#    #+#             */
-/*   Updated: 2023/04/10 17:17:33 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/13 16:13:35 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstlast(t_list *lst)
 		return (lst);
 	else
 	{
-		while (lst -> next)
+		while (lst -> next != NULL)
 			lst = lst->next;
 		return (lst);
 	}

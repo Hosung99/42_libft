@@ -6,13 +6,13 @@
 /*   By: seoson <seoson@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 19:29:32 by seoson            #+#    #+#             */
-/*   Updated: 2023/04/08 16:58:05 by seoson           ###   ########.fr       */
+/*   Updated: 2023/04/19 14:04:43 by seoson           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long	calc_len(long long save, int *len)
+static long long	calc_len(long long save, int *len)
 {
 	long long	temp;
 
